@@ -13,7 +13,6 @@ Source2: %{name}-32.png.bz2
 Source3: %{name}-48.png.bz2
 License: GPL
 Group: Development/Other
-BuildRoot: %{_tmppath}/%{name}-buildroot
 Requires: ruby >= 1.8 ruby-gtk2 ruby-gettext
 BuildRequires: ruby-devel ruby-gettext
 BuildArch: noarch
