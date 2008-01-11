@@ -37,16 +37,6 @@ ruby install.rb install --prefix=%buildroot
 %find_lang %name --all-name 
 
 #menu
-install -m 755 -d %buildroot%{_menudir}
-cat << EOF > %buildroot%{_menudir}/%{name}
-?package(%name): needs="x11" \
-        section="More Applications/Development/Tools" \
-        title="RBBR" \
-        longtitle="RuBy BRowser" \
-        command="%{_bindir}/%{name}" \
-        icon="%{name}.png" \
-	xdg="true"
-EOF
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
@@ -80,7 +70,6 @@ rm -rf %buildroot
 %{_bindir}/*
 %{ruby_sitelibdir}/%{name}*
 %{_datadir}/%{name}
-%{_menudir}/%name
 %{_datadir}/applications/*
 %{_iconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
