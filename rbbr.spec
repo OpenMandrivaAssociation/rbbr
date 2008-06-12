@@ -56,11 +56,15 @@ bzcat %{SOURCE1} > %buildroot%_miconsdir/%{name}.png
 bzcat %{SOURCE2} > %buildroot%_iconsdir/%{name}.png
 bzcat %{SOURCE3} > %buildroot%_liconsdir/%{name}.png
 
+%if %mdkversion < 200900
 %post
 %update_menus
+%endif
 
+%if %mdkversion < 200900
 %postun
 %clean_menus
+%endif
 
 %clean
 rm -rf %buildroot
