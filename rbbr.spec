@@ -1,6 +1,6 @@
 %define name rbbr
 %define version 0.6.0
-%define release %mkrel 5
+%define release %mkrel 6
 
 Summary: RuBy BRowser
 Name: %{name}
