@@ -1,7 +1,7 @@
 Summary: RuBy BRowser
 Name:    rbbr
 Version: 0.6.0
-Release: 11
+Release: 12
 URL: http://ruby-gnome2.sourceforge.jp/hiki.cgi?rbbr
 Source0: %{name}-%{version}-withapi.tar.bz2
 Source1: %{name}-16.png.bz2
